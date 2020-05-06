@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px, sans-serif;
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea {
+  font: 400 14px, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+.navbar-item {
+  color: #ffff;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+}
+.content img {
+  flex: 1;
+  width: 100%;
+}
+.img {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  background-image: url("../assets/DSC_7230S.png");
+  background-size: cover;
+
+  .container {
+    top: 247px;
+    left: 172px;
+    width: 378px;
+    height: 122px;
+    position: absolute;
+    width: 30%;
+  }
+}
+.img2 {
+  display: flex;
+  align-items: stretch;
+  background-color: #d6bd73;
+  background-size: cover;
+  .hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 50px;
+        color: #060303;
+        opacity: 1;
+      }
+      p {
+        color: #060303;
+        opacity: 1;
+      }
+    }
+    img {
+      margin-left: 10%;
+      width: 40%;
+    }
+  }
+}
+.accordions {
+  background-image: linear-gradient(#31271d, #15110e);
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+.img3 {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  background-image: url("../assets/Grupo403.png");
+  background-size: cover;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    button {
+      font-weight: 800;
+      color: #15110e;
+      background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%)
+        0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 3px #00000021;
+      border-radius: 4px;
+      opacity: 1;
+    }
+  }
+}
+.contact {
+  h2 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #060303;
+    opacity: 1;
+  }
+  h3 {
+    text-align: left;
+    font-size: 14px;
+    color: #060303;
+    opacity: 1;
+  }
+
+  li {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 15px;
+    color: #060303;
+    opacity: 1;
+  }
+  input {
+    width: 200px;
+    height: 37px;
+    border: 1px solid #060303;
+    opacity: 1;
+  }
+}
+
+.descriptionButton {
+  margin-top: 5px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 217px;
+  height: 40px;
+  color: #15110e;
+  box-shadow: 0px 3px 3px #00000021;
+  border-radius: 4px;
+  opacity: 1;
+}
+.funcional {
+  background: url("../assets/Grupo378.svg");
+  .funcionalTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .columns {
+    div {
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 10px;
+      opacity: 0.5;
+      width: 100%;
+      height: 50%;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 10px;
+      opacity: 0.5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        opacity: 1;
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 27px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #060303;
+        opacity: 1;
+      }
+
+      p {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #060303;
+        opacity: 1;
+      }
+    }
+  }
+  .planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      margin-top: 10px;
+      color: #15110e;
+    }
+    button {
+      margin-top: 10px;
+      background: transparent
+        linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0%
+        no-repeat padding-box;
+      box-shadow: 0px 3px 3px #00000021;
+      border-radius: 4px;
+      opacity: 1;
+    }
+  }
+}
+
+@import "../node_modules/bulma/bulma";
