@@ -9,7 +9,7 @@
 }
 
 body {
-  font: 400 14px, sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #f0f0f5;
   -webkit-font-smoothing: antialiased;
 }
@@ -24,32 +24,119 @@ button {
   cursor: pointer;
 }
 .navbar-item {
-  color: #ffff;
+  margin-left: 50px;
   text-decoration: none;
+  padding-left: 50px;
+  text-decoration: none;
+  color: #ffff;
 }
 .content {
   display: flex;
 }
-.content img {
-  flex: 1;
-  width: 100%;
+.navbar-brand {
+  img {
+    width: 103px;
+    height: 47px;
+  }
 }
 .img {
-  position: relative;
   width: 100%;
   flex: 1;
   background-image: url("../assets/DSC_7230S.png");
   background-size: cover;
 
   .container {
-    top: 247px;
-    left: 172px;
-    width: 378px;
-    height: 122px;
-    position: absolute;
-    width: 30%;
+    width: 70%;
+    height: 40%;
+    margin-left: 10%;
+    margin-right: 80%;
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      width: 90%;
+      margin-bottom: 10px;
+    }
+    button {
+      background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%);
+      box-shadow: 0px 3px 3px #00000021;
+      border-radius: 4px;
+    }
   }
 }
+.descriptionButton {
+  margin-top: 5px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 217px;
+  height: 40px;
+  color: #15110e;
+  box-shadow: 0px 3px 3px #00000021;
+  border-radius: 4px;
+}
+.funcional {
+  background: url("../assets/Grupo378.svg");
+  .funcionalTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .columns {
+    div {
+      border-radius: 10px;
+      margin: 10px 0 0 10px;
+      margin-right: 10px;
+      width: 100%;
+      height: 50%;
+      transition: 0.6s;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2 {
+        font-weight: bold;
+        font-size: 29px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #060303;
+      }
+
+      p {
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #060303;
+      }
+      &:hover {
+        transform: translateY(-10%);
+      }
+    }
+  }
+  .planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 16px;
+      text-align: center;
+      margin-top: 10px;
+      color: #15110e;
+    }
+    button {
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 10px;
+      background: transparent
+        linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0%
+        no-repeat padding-box;
+      box-shadow: 0px 3px 3px #00000021;
+      border-radius: 4px;
+    }
+  }
+}
+
 .img2 {
   display: flex;
   align-items: stretch;
@@ -66,11 +153,15 @@ button {
       h1 {
         font-size: 50px;
         color: #060303;
-        opacity: 1;
       }
       p {
+        width: 80%;
+        font-size: 18px;
         color: #060303;
-        opacity: 1;
+      }
+      button {
+        font-weight: 500;
+        font-size: 15px;
       }
     }
     img {
@@ -86,7 +177,31 @@ button {
     text-align: center;
     letter-spacing: 0px;
     color: #ffffff;
-    opacity: 1;
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
   }
 }
 .img3 {
@@ -105,6 +220,7 @@ button {
       font-size: 40px;
       font-weight: bold;
     }
+
     button {
       font-weight: 800;
       color: #15110e;
@@ -112,7 +228,6 @@ button {
         0% 0% no-repeat padding-box;
       box-shadow: 0px 3px 3px #00000021;
       border-radius: 4px;
-      opacity: 1;
     }
   }
 }
@@ -123,13 +238,11 @@ button {
     font-size: 20px;
     letter-spacing: 0px;
     color: #060303;
-    opacity: 1;
   }
   h3 {
     text-align: left;
     font-size: 14px;
     color: #060303;
-    opacity: 1;
   }
 
   li {
@@ -137,88 +250,11 @@ button {
     text-align: left;
     font-size: 15px;
     color: #060303;
-    opacity: 1;
   }
   input {
     width: 200px;
     height: 37px;
     border: 1px solid #060303;
-    opacity: 1;
-  }
-}
-
-.descriptionButton {
-  margin-top: 5px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  width: 217px;
-  height: 40px;
-  color: #15110e;
-  box-shadow: 0px 3px 3px #00000021;
-  border-radius: 4px;
-  opacity: 1;
-}
-.funcional {
-  background: url("../assets/Grupo378.svg");
-  .funcionalTitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .columns {
-    div {
-      box-shadow: 0px 3px 6px #00000029;
-      border-radius: 10px;
-      opacity: 0.5;
-      width: 100%;
-      height: 50%;
-      box-shadow: 0px 3px 6px #00000029;
-      border-radius: 10px;
-      opacity: 0.5;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      img {
-        opacity: 1;
-      }
-      h2 {
-        font-weight: bold;
-        font-size: 27px;
-        text-align: center;
-        letter-spacing: 0px;
-        color: #060303;
-        opacity: 1;
-      }
-
-      p {
-        font-size: 20px;
-        text-align: center;
-        letter-spacing: 0px;
-        color: #060303;
-        opacity: 1;
-      }
-    }
-  }
-  .planos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-      text-align: center;
-      margin-top: 10px;
-      color: #15110e;
-    }
-    button {
-      margin-top: 10px;
-      background: transparent
-        linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0%
-        no-repeat padding-box;
-      box-shadow: 0px 3px 3px #00000021;
-      border-radius: 4px;
-      opacity: 1;
-    }
   }
 }
 

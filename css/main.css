@@ -6,7 +6,7 @@
   box-sizing: border-box; }
 
 body {
-  font: 400 14px, sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #f0f0f5;
   -webkit-font-smoothing: antialiased; }
 
@@ -19,29 +19,96 @@ button {
   cursor: pointer; }
 
 .navbar-item {
-  color: #ffff;
-  text-decoration: none; }
+  margin-left: 50px;
+  text-decoration: none;
+  padding-left: 50px;
+  text-decoration: none;
+  color: #ffff; }
 
 .content {
   display: flex; }
 
-.content img {
-  flex: 1;
-  width: 100%; }
+.navbar-brand img {
+  width: 103px;
+  height: 47px; }
 
 .img {
-  position: relative;
   width: 100%;
   flex: 1;
   background-image: url("../assets/DSC_7230S.png");
   background-size: cover; }
   .img .container {
-    top: 247px;
-    left: 172px;
-    width: 378px;
-    height: 122px;
-    position: absolute;
-    width: 30%; }
+    width: 70%;
+    height: 40%;
+    margin-left: 10%;
+    margin-right: 80%; }
+    .img .container p {
+      font-weight: 500;
+      font-size: 18px;
+      width: 90%;
+      margin-bottom: 10px; }
+    .img .container button {
+      background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%);
+      box-shadow: 0px 3px 3px #00000021;
+      border-radius: 4px; }
+
+.descriptionButton {
+  margin-top: 5px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 217px;
+  height: 40px;
+  color: #15110e;
+  box-shadow: 0px 3px 3px #00000021;
+  border-radius: 4px; }
+
+.funcional {
+  background: url("../assets/Grupo378.svg"); }
+  .funcional .funcionalTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .funcional .columns div {
+    border-radius: 10px;
+    margin: 10px 0 0 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 50%;
+    transition: 0.6s;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .funcional .columns div h2 {
+      font-weight: bold;
+      font-size: 29px;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #060303; }
+    .funcional .columns div p {
+      font-size: 22px;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #060303; }
+    .funcional .columns div:hover {
+      transform: translateY(-10%); }
+  .funcional .planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .funcional .planos p {
+      font-size: 16px;
+      text-align: center;
+      margin-top: 10px;
+      color: #15110e; }
+    .funcional .planos button {
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 10px;
+      background: transparent linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 3px #00000021;
+      border-radius: 4px; }
 
 .img2 {
   display: flex;
@@ -58,23 +125,45 @@ button {
       flex-direction: column; }
       .img2 .hero-body .container h1 {
         font-size: 50px;
-        color: #060303;
-        opacity: 1; }
+        color: #060303; }
       .img2 .hero-body .container p {
-        color: #060303;
-        opacity: 1; }
+        width: 80%;
+        font-size: 18px;
+        color: #060303; }
+      .img2 .hero-body .container button {
+        font-weight: 500;
+        font-size: 15px; }
     .img2 .hero-body img {
       margin-left: 10%;
       width: 40%; }
 
 .accordions {
-  background-image: linear-gradient(#31271d, #15110e); }
+  background-image: linear-gradient(#31271d, #15110e);
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the accordion panel. Note: hidden by default */ }
   .accordions h1 {
     font-size: 40px;
     text-align: center;
     letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1; }
+    color: #ffffff; }
+  .accordions .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s; }
+  .accordions .active,
+  .accordions .accordion:hover {
+    background-color: #ccc; }
+  .accordions .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden; }
 
 .img3 {
   display: flex;
@@ -96,94 +185,30 @@ button {
       color: #15110e;
       background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%) 0% 0% no-repeat padding-box;
       box-shadow: 0px 3px 3px #00000021;
-      border-radius: 4px;
-      opacity: 1; }
+      border-radius: 4px; }
 
 .contact h2 {
   font-weight: bold;
   text-align: left;
   font-size: 20px;
   letter-spacing: 0px;
-  color: #060303;
-  opacity: 1; }
+  color: #060303; }
 
 .contact h3 {
   text-align: left;
   font-size: 14px;
-  color: #060303;
-  opacity: 1; }
+  color: #060303; }
 
 .contact li {
   padding-top: 5px;
   text-align: left;
   font-size: 15px;
-  color: #060303;
-  opacity: 1; }
+  color: #060303; }
 
 .contact input {
   width: 200px;
   height: 37px;
-  border: 1px solid #060303;
-  opacity: 1; }
-
-.descriptionButton {
-  margin-top: 5px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  width: 217px;
-  height: 40px;
-  color: #15110e;
-  box-shadow: 0px 3px 3px #00000021;
-  border-radius: 4px;
-  opacity: 1; }
-
-.funcional {
-  background: url("../assets/Grupo378.svg"); }
-  .funcional .funcionalTitle {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .funcional .columns div {
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 10px;
-    opacity: 0.5;
-    width: 100%;
-    height: 50%;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 10px;
-    opacity: 0.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .funcional .columns div img {
-      opacity: 1; }
-    .funcional .columns div h2 {
-      font-weight: bold;
-      font-size: 27px;
-      text-align: center;
-      letter-spacing: 0px;
-      color: #060303;
-      opacity: 1; }
-    .funcional .columns div p {
-      font-size: 20px;
-      text-align: center;
-      letter-spacing: 0px;
-      color: #060303;
-      opacity: 1; }
-  .funcional .planos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .funcional .planos p {
-      text-align: center;
-      margin-top: 10px;
-      color: #15110e; }
-    .funcional .planos button {
-      margin-top: 10px;
-      background: transparent linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 3px #00000021;
-      border-radius: 4px;
-      opacity: 1; }
+  border: 1px solid #060303; }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
