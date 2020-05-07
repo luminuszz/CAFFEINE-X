@@ -9,17 +9,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/main.css" />
+    
   </head>
   <body>
-    <div class="Cotainer">
+    <header>
       <nav
         class="navbar has-background-black"
         role="navigation"
         aria-label="main navigation"
       >
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
+        <div class="navbar-brand has-background-black">
+          <a class="navbar-item" href="#">
             <img src="./assets/logoImg.svg" width="112" height="100" />
           </a>
 
@@ -36,21 +42,22 @@
           </a>
         </div>
 
-        <div id="nav" class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu has-background-black">
           <div class="navbar-start">
-            <a class="navbar-item">
+            <a class="navbar-item" href="#funcional">
               COMO FUNCIONA
             </a>
 
-            <a class="navbar-item">
+            <a href="#box" class="navbar-item">
               EXPERIÊNCIA
             </a>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                DÚVIDAS FREQUENTES
-              </a>
-            </div>
+            <a href="#faq" class="navbar-item">
+              DÚVIDAS FREQUENTES
+            </a>
+            <a href="#contact" class="navbar-item">
+              CONTATO
+            </a>
           </div>
 
           <div class="navbar-end">
@@ -68,11 +75,11 @@
           </div>
         </div>
       </nav>
-    </div>
-
+    </header>
     <section class="hero is-large img">
-      <div class="hero-body">
-        <div class="container">
+      <div class="hero-body 
+      ">
+        <div class="container animated fadeInLeft">
           <h1 class="title">
             CAFFEINE X
           </h1>
@@ -89,14 +96,14 @@
       </div>
     </section>
     <br />
-    <section class="hero is-large funcional">
+    <section id="funcional" class="hero is-large funcional">
       <div class="funcionalTitle">
         <br />
-        <h1 class="title">COMO FUNCIONA</h1>
+        <h1 class="title">COMO FUNCIONA?</h1>
       </div>
       <br />
       <div class="columns">
-        <div class="column">
+        <div class="column wow  fadeInLeft ">
           <img src="./assets/comodidade.svg" alt="" />
           <h2>COMODIDADE</h2>
           <p>
@@ -104,7 +111,7 @@
             sua rotina. Receba em casa sempre que quiser, sem preocupação.
           </p>
         </div>
-        <div class="column">
+        <div class="column wow fadeInUp">
           <img src="./assets/Grupo 401.svg" alt="" />
           <h2>AUXÍLIO NA SUA ROTINA</h2>
           <p>
@@ -113,7 +120,7 @@
             melhor versão.
           </p>
         </div>
-        <div class="column">
+        <div class="column wow fadeInRight">
           <img src="./assets/Grupo 400.svg" alt="" />
           <h2>BRINDES EXCLUSIVOS</h2>
           <p>
@@ -124,15 +131,15 @@
       </div>
       <br />
       <div class="planos">
-        <p>Sem compromisso, você pode cancelar quando quiser</p>
+        <p>Sem compromisso, você pode cancelar quando quiser !</p>
         <button class="button">CONHEÇA OS PLANOS</button>
       </div>
     </section>
     <br />
     <br />
-    <section class="hero img2">
+    <section id="box" class="hero img2">
       <div class="hero-body">
-        <img src="./assets/caixa2.png" alt="caixa" />
+        <img class="up wow fadeInLeft" src="./assets/caixa2.png" alt="caixa" />
         <div class="container">
           <h2 class="title">
             O QUE VEM NA CAIXA
@@ -145,24 +152,70 @@
         </div>
       </div>
     </section>
-    <section class="hero is-large accordions">
+    <section id="faq" class=" hero is-large accordions">
       <h1>TEM DÚVIDAS? NÓS RESPONDEMOS</h1>
-      <button class="accordion">Section 1</button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
+      <div class="container">
+        <div class="accordion wow fadeIn">
+          <div class="accordion-item">
+            <a>Why is the moon sometimes out during the day?</a>
 
-      <button class="accordion">Section 2</button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-
-      <button class="accordion">Section 3</button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a>Why is the sky blue?</a>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a>Will we ever discover aliens?</a>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a>How much does the Earth weigh?</a>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a>How do airplanes stay up?</a>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="hero is-medium img3">
+    <section id="contact" class="hero is-medium img3">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">VIVA SUA MELHOR VERSÃO</h1>
@@ -170,8 +223,9 @@
         </div>
       </div>
     </section>
+    
     <section class="hero contact">
-      <section class="hero-body">
+      <div class="hero-body">
         <div class="container">
           <div class="columns">
             <div class="column">
@@ -181,51 +235,63 @@
                 <li>Encontre uma loja</li>
                 <li>Ajuda</li>
                 <li>Contato</li>
+                <br>
+                <div class="inputEmail ">
+                  <h3>ASSINE NOSSA NEWSLETTER</h3>
+                  <div class="divButton">
+                    <input type="email" />
+                    <button>OK</button>
+                  </div>
+                </div>
               </ul>
+
               <br />
-              <h3>ASSINE NOSSA NEWSLETTER</h3>
-              <div class="control has-icons-left has-icons-right">
-                <input
-                  class="input"
-                  type="email"
-                  placeholder="Preencher Email"
-                />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
-              </div>
             </div>
             <div class="column">
               <h2>ÁREA DO CLIENTE</h2>
               <ul>
                 <li>Meus Pedidos</li>
-                <li>Meus Pedidos</li>
-                <li>Meus Pedidos</li>
-                <li>Meus Pedidos</li>
+                <li>Rastrear Pedido</li>
+                <li>Política de Entrega</li>
+                <li>Política de Privacidade</li>
                 <li>Política de Troca e devolução</li>
+                <br>
+                <div class="icons-social">
+                  <div>
+                    <img src="./assets/facebook.svg" alt="facebook" />
+                    <img src="./assets/twiter.svg" alt="twiter" />
+                    <img src="./assets/logo-instagram.svg" alt="logo-instagram" />
+                    <img src="./assets/youtube.svg" alt="youtube" />
+                  </div>
+                  <h3>#BEUNSTOPPABLE</h3>
+                </div>
+              </div>
               </ul>
-            </div>
+            
             <div class="column">
               <h2>CAFFEINE ACADEMY</h2>
               <ul>
-                <li>Meus Pedidos</li>
-                <li>Meus Pedidos</li>
-                <li>Meus Pedidos</li>
-                <li>Meus Pedidos</li>
+                <li>Alta Performance</li>
+                <li>Receitas</li>
+                <li>Biohacking</li>
+                <li>SuperCoffee</li>
               </ul>
             </div>
-            <div class="column">
+            <div class="column pagamento">
               <h2>FORMAS DE PAGAMENTO</h2>
-              Fourth column
+             <img src="./assets/logo pagamento.jpg" alt="">
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
-
+    <footer>
+      <hr class="has-background-black" />
+      <h1 class="title is-6 has-text-black has-text-centered">
+        © 2020 Caffeine Army. CNPJ: 27.403.527/0001-13
+      </h1>
+      <br />
+    </footer>
     <script
       type="text/javascript"
       src="/node_modules/bulma-accordion/dist/js/bulma-accordion.min.js"
@@ -237,6 +303,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

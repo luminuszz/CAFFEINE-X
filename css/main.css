@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "NexaDemo-Bold";
+  src: url("../fonts/Nexa/Nexa/Nexa_V2_2020/WEB/NexaDemo-Bold.eot"); }
+
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +10,22 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  background: url("../assets/novofundo.png");
+  font-family: "NexaDemo-Bold", sans-serif;
   background: #f0f0f5;
   -webkit-font-smoothing: antialiased; }
 
 input,
 button,
 textarea {
-  font: 400 14px, sans-serif; }
+  font: 400 14px, "sans-serif"; }
 
 button {
   cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
 
 .navbar-item {
   margin-left: 50px;
@@ -24,6 +33,17 @@ button {
   padding-left: 50px;
   text-decoration: none;
   color: #ffff; }
+  .navbar-item:hover {
+    text-decoration: none;
+    color: #060303; }
+  .navbar-item .button {
+    width: 111px;
+    height: 35px;
+    background: #e4ca7f 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.13);
+    border-radius: 4px; }
+    .navbar-item .button:hover {
+      color: #fff; }
 
 .content {
   display: flex; }
@@ -38,19 +58,35 @@ button {
   background-image: url("../assets/DSC_7230S.png");
   background-size: cover; }
   .img .container {
-    width: 70%;
+    width: 100%;
     height: 40%;
+    transition: 0.4s;
     margin-left: 10%;
     margin-right: 80%; }
+    .img .container:hover {
+      transform: translateY(-8%); }
+    .img .container h1 {
+      font-style: italic;
+      font-size: 40px;
+      font-weight: bold;
+      color: #15110e; }
     .img .container p {
       font-weight: 500;
       font-size: 18px;
-      width: 90%;
+      width: 50%;
       margin-bottom: 10px; }
     .img .container button {
+      font-weight: 500;
+      font-size: 16px;
       background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%);
       box-shadow: 0px 3px 3px #00000021;
-      border-radius: 4px; }
+      border-radius: 4px;
+      transition: 0.4s; }
+      .img .container button:hover {
+        transform: translateY(-8%);
+        color: #fff; }
+      .img .container button:hover::after {
+        color: #ffff; }
 
 .descriptionButton {
   margin-top: 5px;
@@ -62,8 +98,9 @@ button {
   border-radius: 4px; }
 
 .funcional {
-  background: url("../assets/Grupo378.svg"); }
+  background: transparent url("../assets/novofundo.png") 0% 0% no-repeat padding-box; }
   .funcional .funcionalTitle {
+    font-style: italic;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -73,12 +110,13 @@ button {
     margin-right: 10px;
     width: 100%;
     height: 50%;
-    transition: 0.6s;
+    transition: 0.3s;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    padding-left: 2%; }
     .funcional .columns div h2 {
       font-weight: bold;
       font-size: 29px;
@@ -91,14 +129,15 @@ button {
       letter-spacing: 0px;
       color: #060303; }
     .funcional .columns div:hover {
-      transform: translateY(-10%); }
+      transform: translateY(-8%); }
   .funcional .planos {
     display: flex;
+    transition: 0.4s;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     .funcional .planos p {
-      font-size: 16px;
+      font-size: 18px;
       text-align: center;
       margin-top: 10px;
       color: #15110e; }
@@ -109,6 +148,10 @@ button {
       background: transparent linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0% no-repeat padding-box;
       box-shadow: 0px 3px 3px #00000021;
       border-radius: 4px; }
+      .funcional .planos button:hover {
+        color: #fff; }
+    .funcional .planos:hover {
+      transform: translateY(-5%); }
 
 .img2 {
   display: flex;
@@ -123,47 +166,122 @@ button {
       margin-right: 20px;
       display: flex;
       flex-direction: column; }
-      .img2 .hero-body .container h1 {
+      .img2 .hero-body .container h2 {
+        font-style: italic;
         font-size: 50px;
         color: #060303; }
       .img2 .hero-body .container p {
         width: 80%;
-        font-size: 18px;
+        font-size: 20px;
         color: #060303; }
       .img2 .hero-body .container button {
         font-weight: 500;
-        font-size: 15px; }
+        font-size: 15px;
+        transition: 0.4s; }
+        .img2 .hero-body .container button:hover {
+          transform: translateY(-5%);
+          font-weight: 500; }
     .img2 .hero-body img {
       margin-left: 10%;
-      width: 40%; }
+      width: 40%;
+      transition: 0.4s; }
+      .img2 .hero-body img:hover {
+        transform: translateY(-8%); }
 
 .accordions {
-  background-image: linear-gradient(#31271d, #15110e);
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  /* Style the accordion panel. Note: hidden by default */ }
+  background-image: linear-gradient(#31271d, #15110e); }
   .accordions h1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
     font-size: 40px;
     text-align: center;
     letter-spacing: 0px;
-    color: #ffffff; }
-  .accordions .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
+    color: #ffffff;
+    margin-right: 3px; }
+  .accordions .container {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    margin-top: 4%;
+    margin-bottom: 9%; }
+  .accordions .accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s; }
-  .accordions .active,
-  .accordions .accordion:hover {
-    background-color: #ccc; }
-  .accordions .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden; }
+    padding: 1rem 3rem 1rem 1rem;
+    color: #ffff;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #3d2c1b;
+    background-color: #362719;
+    border-radius: 5px;
+    margin-top: 8px;
+    transition: 0.2s;
+    text-decoration: none; }
+  .accordions .accordion a:hover {
+    color: #d3ad86;
+    transform: translateY(-5%); }
+  .accordions .accordion a:hover::after {
+    cursor: pointer;
+    color: #d3ad86; }
+  .accordions .accordion a:hover::after {
+    transform: translateY(-5%); }
+  .accordions .accordion a.active {
+    transform: translateY(-5%);
+    color: #d3ad86;
+    border-bottom: 1px solid #d3ad86; }
+  .accordions .accordion a::after {
+    font-family: "Ionicons";
+    content: "\f218";
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 13px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center; }
+  .accordions .accordion a.active::after {
+    font-family: "Ionicons";
+    content: "\f209";
+    color: #d3ad86; }
+  .accordions .accordion .content {
+    background-color: #302012;
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s; }
+  .accordions .accordion .content p {
+    color: #e2e2e1;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300; }
+  .accordions .accordion .content.active {
+    text-align: center;
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s; }
 
 .img3 {
   display: flex;
@@ -177,38 +295,72 @@ button {
     justify-content: center;
     align-items: center; }
     .img3 .container h1 {
+      font-style: italic;
       text-align: center;
       font-size: 40px;
+      color: #15110e;
+      transition: 0.4s;
       font-weight: bold; }
+      .img3 .container h1:hover {
+        transform: translateY(-10%); }
     .img3 .container button {
-      font-weight: 800;
+      font-weight: 500;
       color: #15110e;
       background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%) 0% 0% no-repeat padding-box;
       box-shadow: 0px 3px 3px #00000021;
-      border-radius: 4px; }
+      border-radius: 4px;
+      transition: 0.4s; }
+      .img3 .container button:hover {
+        transform: translateY(-5%);
+        color: #fff; }
 
-.contact h2 {
-  font-weight: bold;
-  text-align: left;
-  font-size: 20px;
-  letter-spacing: 0px;
-  color: #060303; }
-
-.contact h3 {
-  text-align: left;
-  font-size: 14px;
-  color: #060303; }
-
-.contact li {
-  padding-top: 5px;
-  text-align: left;
-  font-size: 15px;
-  color: #060303; }
-
-.contact input {
-  width: 200px;
-  height: 37px;
-  border: 1px solid #060303; }
+.contact {
+  display: flex;
+  align-items: center; }
+  .contact h3 {
+    text-align: left;
+    font-size: 14px;
+    color: #060303; }
+  .contact li {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 15px;
+    color: #060303; }
+  .contact .inputEmail {
+    flex-direction: column; }
+    .contact .inputEmail h3 {
+      width: 207px;
+      height: 18px;
+      text-align: left;
+      font-size: 15px;
+      color: #060303;
+      margin-bottom: 5px; }
+    .contact .inputEmail input {
+      width: 207px;
+      padding: 0 10px;
+      height: 37px;
+      border: 1px solid #060303;
+      border-radius: 2px; }
+  .contact .divButton button {
+    bottom: 4px;
+    width: 56px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    background: #060303;
+    border-radius: 6px; }
+  .contact .icons-social {
+    display: flex;
+    flex-direction: column; }
+    .contact .icons-social img {
+      width: 30px;
+      height: 20px; }
+    .contact .icons-social h3 {
+      font-weight: bold;
+      color: #060303;
+      font-weight: 13px; }
+  .contact .pagamento {
+    width: 90%; }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

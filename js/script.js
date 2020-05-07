@@ -1,18 +1,43 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+new WOW().init();
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+const $doc = $("html, body");
+$("a").click(function () {
+  $doc.animate(
+    {
+      scrollTop: $($.attr(this, "href")).offset().top,
+    },
+    1000
+  );
+  return false;
+});
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+// navbar
+document.addEventListener("DOMContentLoaded", () => {
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(
+    document.querySelectorAll(".navbar-burger"),
+    0
+  );
+
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener("click", () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
+      });
+    });
+  }
+});
+
+// Faq
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion() {
+  this.classList.toggle("active");
+  this.nextElementSibling.classList.toggle("active");
 }
+
+items.forEach((item) => item.addEventListener("click", toggleAccordion));

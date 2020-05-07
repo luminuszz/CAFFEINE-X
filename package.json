@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@creativebulma/bulma-collapsible": "^1.0.4",
+    "animate.css": "^4.0.0",
     "bulma-accordion": "^2.0.1",
     "bulma-extensions": "^6.2.7"
   }

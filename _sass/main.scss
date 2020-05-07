@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: "NexaDemo-Bold";
+  src: url("../fonts/Nexa/Nexa/Nexa_V2_2020/WEB/NexaDemo-Bold.eot");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +14,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  background: url("../assets/novofundo.png");
+  font-family: "NexaDemo-Bold", sans-serif;
   background: #f0f0f5;
   -webkit-font-smoothing: antialiased;
 }
@@ -17,11 +23,15 @@ body {
 input,
 button,
 textarea {
-  font: 400 14px, sans-serif;
+  font: 400 14px, "sans-serif";
 }
 
 button {
   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
 .navbar-item {
   margin-left: 50px;
@@ -29,6 +39,20 @@ button {
   padding-left: 50px;
   text-decoration: none;
   color: #ffff;
+  &:hover {
+    text-decoration: none;
+    color: #060303;
+  }
+  .button {
+    width: 111px;
+    height: 35px;
+    background: rgba(228, 202, 127, 1) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 .content {
   display: flex;
@@ -46,20 +70,40 @@ button {
   background-size: cover;
 
   .container {
-    width: 70%;
+    width: 100%;
     height: 40%;
+    transition: 0.4s;
     margin-left: 10%;
     margin-right: 80%;
+    &:hover {
+      transform: translateY(-8%);
+    }
+    h1 {
+      font-style: italic;
+      font-size: 40px;
+      font-weight: bold;
+      color: #15110e;
+    }
     p {
       font-weight: 500;
       font-size: 18px;
-      width: 90%;
+      width: 50%;
       margin-bottom: 10px;
     }
     button {
+      font-weight: 500;
+      font-size: 16px;
       background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%);
       box-shadow: 0px 3px 3px #00000021;
       border-radius: 4px;
+      transition: 0.4s;
+      &:hover {
+        transform: translateY(-8%);
+        color: #fff;
+      }
+      &:hover::after {
+        color: #ffff;
+      }
     }
   }
 }
@@ -73,8 +117,10 @@ button {
   border-radius: 4px;
 }
 .funcional {
-  background: url("../assets/Grupo378.svg");
+  background: transparent url("../assets/novofundo.png") 0% 0% no-repeat
+    padding-box;
   .funcionalTitle {
+    font-style: italic;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,12 +133,13 @@ button {
       margin-right: 10px;
       width: 100%;
       height: 50%;
-      transition: 0.6s;
+      transition: 0.3s;
       box-shadow: 0px 3px 6px #00000029;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-left: 2%;
 
       h2 {
         font-weight: bold;
@@ -109,23 +156,25 @@ button {
         color: #060303;
       }
       &:hover {
-        transform: translateY(-10%);
+        transform: translateY(-8%);
       }
     }
   }
   .planos {
     display: flex;
+    transition: 0.4s;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     p {
-      font-size: 16px;
+      font-size: 18px;
       text-align: center;
       margin-top: 10px;
       color: #15110e;
     }
     button {
       font-weight: 500;
+
       font-size: 16px;
       margin-top: 10px;
       background: transparent
@@ -133,6 +182,12 @@ button {
         no-repeat padding-box;
       box-shadow: 0px 3px 3px #00000021;
       border-radius: 4px;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &:hover {
+      transform: translateY(-5%);
     }
   }
 }
@@ -150,58 +205,154 @@ button {
       margin-right: 20px;
       display: flex;
       flex-direction: column;
-      h1 {
+      h2 {
+        font-style: italic;
         font-size: 50px;
         color: #060303;
       }
       p {
         width: 80%;
-        font-size: 18px;
+        font-size: 20px;
         color: #060303;
       }
       button {
         font-weight: 500;
         font-size: 15px;
+        transition: 0.4s;
+        &:hover {
+          transform: translateY(-5%);
+          font-weight: 500;
+        }
       }
     }
     img {
       margin-left: 10%;
       width: 40%;
+      transition: 0.4s;
+      &:hover {
+        transform: translateY(-8%);
+      }
     }
   }
 }
 .accordions {
   background-image: linear-gradient(#31271d, #15110e);
+
   h1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
     font-size: 40px;
     text-align: center;
     letter-spacing: 0px;
     color: #ffffff;
+    margin-right: 3px;
   }
-  .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
+
+  .container {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    margin-top: 4%;
+    margin-bottom: 9%;
+  }
+
+  .accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #ffff;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #3d2c1b;
+    background-color: #362719;
+    border-radius: 5px;
+    margin-top: 8px;
+    transition: 0.2s;
+    text-decoration: none;
   }
 
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active,
-  .accordion:hover {
-    background-color: #ccc;
+  .accordion a:hover {
+    color: rgb(211, 173, 134);
+    transform: translateY(-5%);
+  }
+  .accordion a:hover::after {
+    cursor: pointer;
+    color: rgb(211, 173, 134);
   }
 
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+  .accordion a:hover::after {
+    transform: translateY(-5%);
+    // border: 1px solid rgb(211, 173, 134);
+  }
+
+  .accordion a.active {
+    transform: translateY(-5%);
+    color: rgb(211, 173, 134);
+    border-bottom: 1px solid rgb(211, 173, 134);
+  }
+
+  .accordion a::after {
+    font-family: "Ionicons";
+    content: "\f218";
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 13px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .accordion a.active::after {
+    font-family: "Ionicons";
+    content: "\f209";
+    color: rgb(211, 173, 134);
+    //  border: 1px solid rgb(211, 173, 134);
+  }
+
+  .accordion .content {
+    background-color: #302012;
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+  }
+
+  .accordion .content p {
+    color: rgba(226, 226, 225, 1);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .accordion .content.active {
+    text-align: center;
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
   }
 }
 .img3 {
@@ -216,29 +367,33 @@ button {
     justify-content: center;
     align-items: center;
     h1 {
+      font-style: italic;
       text-align: center;
       font-size: 40px;
+      color: #15110e;
+      transition: 0.4s;
       font-weight: bold;
+      &:hover {
+        transform: translateY(-10%);
+      }
     }
 
     button {
-      font-weight: 800;
+      font-weight: 500;
       color: #15110e;
       background: transparent linear-gradient(270deg, #e4ca7f 0%, #d5bc77 100%)
         0% 0% no-repeat padding-box;
       box-shadow: 0px 3px 3px #00000021;
       border-radius: 4px;
+      transition: 0.4s;
+      &:hover {
+        transform: translateY(-5%);
+        color: #fff;
+      }
     }
   }
 }
 .contact {
-  h2 {
-    font-weight: bold;
-    text-align: left;
-    font-size: 20px;
-    letter-spacing: 0px;
-    color: #060303;
-  }
   h3 {
     text-align: left;
     font-size: 14px;
@@ -251,10 +406,55 @@ button {
     font-size: 15px;
     color: #060303;
   }
-  input {
-    width: 200px;
-    height: 37px;
-    border: 1px solid #060303;
+
+  display: flex;
+  align-items: center;
+
+  .inputEmail {
+    flex-direction: column;
+    h3 {
+      width: 207px;
+      height: 18px;
+      text-align: left;
+      font-size: 15px;
+      color: rgba(6, 3, 3, 1);
+      margin-bottom: 5px;
+    }
+    input {
+      width: 207px;
+      padding: 0 10px;
+      height: 37px;
+      border: 1px solid rgba(6, 3, 3, 1);
+      border-radius: 2px;
+    }
+  }
+  .divButton {
+    button {
+      bottom: 4px;
+      width: 56px;
+      height: 40px;
+      color: #fff;
+      padding: 10px 10px 10px 10px;
+      background: rgba(6, 3, 3, 1);
+      border-radius: 6px;
+    }
+  }
+
+  .icons-social {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 30px;
+      height: 20px;
+    }
+    h3 {
+      font-weight: bold;
+      color: #060303;
+      font-weight: 13px;
+    }
+  }
+  .pagamento {
+    width: 90%;
   }
 }
 
