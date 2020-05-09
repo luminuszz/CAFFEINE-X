@@ -398,6 +398,8 @@ a {
   .img2 .hero-body {
     display: flex;
     flex-direction: column; }
+    .img2 .hero-body img {
+      width: 100%; }
     .img2 .hero-body .container {
       align-items: center; }
       .img2 .hero-body .container h2 {

@@ -509,6 +509,9 @@ a {
     .hero-body {
       display: flex;
       flex-direction: column;
+      img {
+        width: 100%;
+      }
       .container {
         align-items: center;
         h2 {
