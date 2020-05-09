@@ -53,12 +53,11 @@ a {
   height: 47px; }
 
 .img {
-  width: 100%;
-  flex: 1;
   background-image: url("../assets/DSC_7230S.png");
+  background-repeat: no-repeat;
   background-size: cover; }
   .img .container {
-    width: 100%;
+    width: 50%;
     height: 40%;
     transition: 0.4s;
     margin-left: 10%;
@@ -98,39 +97,42 @@ a {
   border-radius: 4px; }
 
 .funcional {
-  background: transparent url("../assets/novofundo.png") 0% 0% no-repeat padding-box; }
+  background: url("../assets/novofundo.png") no-repeat padding-box; }
   .funcional .funcionalTitle {
     font-style: italic;
     display: flex;
     align-items: center;
     justify-content: center; }
-  .funcional .columns div {
-    border-radius: 10px;
-    margin: 10px 0 0 10px;
-    margin-right: 10px;
-    width: 100%;
-    height: 50%;
-    transition: 0.3s;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+  .funcional .columns {
+    margin-top: 3%;
     justify-content: center;
-    padding-left: 2%; }
-    .funcional .columns div h2 {
-      font-weight: bold;
-      font-size: 29px;
-      text-align: center;
-      letter-spacing: 0px;
-      color: #060303; }
-    .funcional .columns div p {
-      font-size: 22px;
-      text-align: center;
-      letter-spacing: 0px;
-      color: #060303; }
-    .funcional .columns div:hover {
-      transform: translateY(-8%); }
+    align-items: center; }
+    .funcional .columns div {
+      width: 30%;
+      border-radius: 10px;
+      margin: 10px 0 0 10px;
+      transition: 0.3s;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2%; }
+      .funcional .columns div h2 {
+        font-weight: bold;
+        font-size: 29px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #060303; }
+      .funcional .columns div p {
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #060303; }
+      .funcional .columns div:hover {
+        transform: translateY(-8%); }
   .funcional .planos {
+    margin-bottom: 2%;
     display: flex;
     transition: 0.4s;
     flex-direction: column;
@@ -361,6 +363,56 @@ a {
       font-weight: 13px; }
   .contact .pagamento {
     width: 90%; }
+
+@media (max-width: 768px) {
+  .img {
+    display: flex;
+    flex-direction: column;
+    background-size: 100%; }
+    .img .container {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 27%; }
+      .img .container p {
+        text-align: center;
+        width: 98%;
+        font-size: 14px; }
+  .funcional {
+    margin-top: 2%; }
+    .funcional .columns {
+      margin-top: 3%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20%; }
+      .funcional .columns div {
+        width: 75%;
+        height: 30%;
+        margin: 0; }
+    .funcional .planos p {
+      font-weight: 500;
+      width: 95%; }
+  .img2 .hero-body {
+    display: flex;
+    flex-direction: column; }
+    .img2 .hero-body img {
+      width: 100%; }
+    .img2 .hero-body .container {
+      align-items: center; }
+      .img2 .hero-body .container h2 {
+        text-align: center;
+        font-size: 40px; }
+      .img2 .hero-body .container p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+  .accordions h1 {
+    font-size: 30px; }
+  .img3 .container h1 {
+    font-size: 30px; } }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

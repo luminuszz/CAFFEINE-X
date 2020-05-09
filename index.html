@@ -22,11 +22,11 @@
   <body>
     <header>
       <nav
-        class="navbar has-background-black"
+        class="navbar is-black"
         role="navigation"
         aria-label="main navigation"
       >
-        <div class="navbar-brand has-background-black">
+        <div class="navbar-brand is-black is-hidden-mobile">
           <a class="navbar-item" href="https://www.caffeinearmy.com.br/">
             <img src="./assets/logoImg.svg" width="200" height="200" />
           </a>
@@ -43,6 +43,22 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
+        <div class="navbar-brand is-hidden-desktop">
+          <a class="navbar-item " href="https://bulma.io">
+              LOGIN
+          </a>
+
+          <a class="navbar-item icon_mobile" href="https://bulma.io">
+              <img src="./assets/mobile/Grupo 366.svg">
+          </a>
+
+          <a  data-target="navbarBasicExample" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+              data-target="navbarCoffeine">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
+      </div>
 
         <div id="navbarBasicExample" class="navbar-menu has-background-black">
           <div class="navbar-start">
@@ -78,10 +94,10 @@
         </div>
       </nav>
     </header>
-    <section class="hero is-large img">
+    <section class="hero is-medium  img ">
       <div class="hero-body 
       ">
-        <div class="container animated fadeInLeft">
+        <div class="container animated fadeInLeft ">
           <h1 class="title">
             CAFFEINE X
           </h1>
@@ -103,8 +119,8 @@
         <h1 class="title">COMO FUNCIONA?</h1>
       </div>
      
-      <div class="columns">
-        <div class="column wow  fadeInLeft ">
+      <div class="columns ">
+        <div class="column is-one-fifth wow  fadeInLeft   ">
           <img src="./assets/comodidade.svg" alt="" />
           <h2>COMODIDADE</h2>
           <p>
@@ -112,7 +128,7 @@
             sua rotina. Receba em casa sempre que quiser, sem preocupação.
           </p>
         </div>
-        <div class="column wow fadeInUp">
+        <div class="column  wow fadeInUp is-one-fifth">
           <img src="./assets/Grupo 401.svg" alt="" />
           <h2>AUXÍLIO NA SUA ROTINA</h2>
           <p>
@@ -121,7 +137,7 @@
             melhor versão.
           </p>
         </div>
-        <div class="column wow fadeInRight">
+        <div class="column wow fadeInRight is-one-fifth ">
           <img src="./assets/Grupo 400.svg" alt="" />
           <h2>BRINDES EXCLUSIVOS</h2>
           <p>
