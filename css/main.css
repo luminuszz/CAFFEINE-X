@@ -288,8 +288,8 @@ a {
 .img3 {
   display: flex;
   width: 100%;
-  flex: 1;
   background-image: url("../assets/Grupo403.png");
+  background-repeat: no-repeat;
   background-size: cover; }
   .img3 .container {
     display: flex;
@@ -367,9 +367,9 @@ a {
 @media (max-width: 768px) {
   .img {
     display: flex;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white), url("../assets/mobile/DSC_7230.png");
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white), url("../assets/mobile/DSC_7230.png") no-repeat;
     flex-direction: column;
-    background-size: 100%; }
+    background-size: 100% 120%; }
     .img .container {
       display: flex;
       flex-direction: column;
@@ -412,8 +412,17 @@ a {
         width: 100%; }
   .accordions h1 {
     font-size: 30px; }
+  .img3 .hero-body {
+    background-image: linear-gradient(to right, #b59e5e, #e4ca7f7a 10%), url("../assets/mobile/DSC_7199.png");
+    background-repeat: no-repeat;
+    background-size: 120% 110%;
+    background-position: left -20px top 0px; }
   .img3 .container h1 {
     font-size: 30px; } }
+
+@media (min-width: 1024px) {
+  .img {
+    background-size: 100%; } }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
