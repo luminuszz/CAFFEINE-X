@@ -66,7 +66,7 @@ a {
 .img {
   background-image: url("../assets/DSC_7230S.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   .container {
     width: 50%;
     height: 40%;
@@ -460,16 +460,24 @@ a {
 @media (max-width: 768px) {
   .img {
     display: flex;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 1)
+      ),
+      url("../assets/mobile/DSC_7230.png");
     flex-direction: column;
     background-size: 100%;
 
     .container {
-      justify-content: center;
-      align-items: center;
       display: flex;
+
       flex-direction: column;
       width: 90%;
       margin-top: 27%;
+      justify-content: center;
+      align-items: center;
+
       p {
         text-align: center;
         width: 98%;
@@ -501,15 +509,11 @@ a {
     .hero-body {
       display: flex;
       flex-direction: column;
-
-      img {
-        width: 100%;
-      }
       .container {
         align-items: center;
         h2 {
           text-align: center;
-          font-size: 40px;
+          font-size: 30px;
         }
         p {
           text-align: center;
