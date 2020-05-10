@@ -6,6 +6,7 @@
 }
 
 .cardTeste{
+      background: url("../assets/novofundo.png") no-repeat;
       border-radius: 10px;
       margin: 10px 0 0 10px;
       transition: 0.3s;
@@ -74,7 +75,10 @@
       
       
       @media(max-width: 375px){
-             height: 30%;
+           cardTeste{
+            height: 30%;
+           
+           }    
            
       }
   
