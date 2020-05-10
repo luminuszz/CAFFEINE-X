@@ -487,6 +487,8 @@ a {
     }
   }
   .funcional {
+    display: flex;
+    flex-direction: column;
     margin-top: 2%;
     .columns {
       margin-top: 3%;
