@@ -1,106 +1,85 @@
-# Start package for [Bulma](http://bulma.io)
-
-Tiny npm package that includes the `npm` **dependencies** you need to **build your own website** with Bulma.
-
-<a href="http://bulma.io"><img src="https://raw.githubusercontent.com/jgthms/bulma-start/master/bulma-start.png" alt="Bulma: a Flexbox CSS framework" style="max-width:100%;" width="600" height="315"></a>
-
-## Install
-
-```sh
-npm install bulma-start
-```
-_or_
-
-```sh
-yarn add bulma-start
-```
-
-## What's included
-
-The `npm` dependencies included in `package.json` are:
-
-* <code>[bulma](https://github.com/jgthms/bulma)</code>
-* <code>[node-sass](https://github.com/sass/node-sass)</code> to compile your own Sass file
-* <code>[postcss-cli](https://github.com/postcss/postcss-cli)</code> and <code>[autoprefixer](https://github.com/postcss/autoprefixer)</code> to add support for older browsers
-* <code>[babel-cli](https://babeljs.io/docs/usage/cli/)</code>, <code>[babel-preset-env](https://github.com/babel/babel-preset-env)</code> and <code>[babel-preset-es2015-ie](https://github.com/jmcriffey/babel-preset-es2015-ie)</code> for compiling ES6 JavaScript files
-
-Apart from `package.json`, the following files are included:
-
-* `.babelrc` configuration file for [Babel](https://babeljs.io/)
-* `.gitignore` common [Git](https://git-scm.com/) ignored files
-* `index.html` this HTML5 file
-* `_sass/main.scss` a basic SCSS file that **imports Bulma** and explains how to **customize** your styles, and compiles to `css/main.css`
-* `_javascript/main.js` an ES6 JavaScript that compiles to `lib/main.js`
+<p align="center">
+  <a target="blank"><img src="https://user-images.githubusercontent.com/48535259/81498606-46498c00-929c-11ea-80e1-8b486788010d.png" width="400" alt="" /></a>
+</p>
 
 
-## Get your feet wet
 
-This package is meant to provide a **good starting point** for working with Bulma.
 
-When installing this package with the commands above, it landed in `$HOME/node_packages/bulma-start`.
-In order to use it as a **template** for your **project**, you might consider copying it to a better suited location:
+## Description
 
-```sh
-cd $HOME/projects
-cp -a $HOME/node_modules/bulma-start my-bulma-project
+
+   <p>
+  The development of this Responsive SPA was used as a test to validate my skills in HTML, CSS and JS, using the CSS Bulma Framework
+</p>
+
+
+## Features
+
+  - This project use  [Bulma package](https://bulma.io) and [Sass](https://sass-lang.com)
+  - Bulma version :  0.8.2
+  - Sass version: 1.26.5 
+  
+
+
+## Installation
+
+
+```bash
+$ npm install
+$ yarn install
 ```
 
-Alternatively, you could do something similar with a GitHub clone as well.
+## Running the app
 
-```sh
-cd $HOME/projects
-git clone https://github.com/jgthms/bulma-start
-mv bulma-start my-bulma-project
-rm -rf my-bulma-project/.git     # cut its roots
+```bash
+$ npm run start
+$ yarn start
+
 ```
+## Preview
 
-Now, that you prepared the groundwork for your project, set up Bulma and run the watchers:
+  ### Desktop
 
-```sh
-cd my-bulma-project
-npm install
-npm start
-```
-
-As long as `npm start` is running, it will **watch** your changes. You can edit `_sass/main.scss` and `_javascript/main.js` at will. Changes are **immediately** compiled to their destinations, where `index.html` will pick them up upon reload in your browser.
-
-Some controlling output is written to the `npm start` console in that process:
-
-```sh
-_javascript/main.js -> lib/main.js
-
-=> changed: $HOME/projects/start-with-bulma/_sass/main.scss
-Rendering Complete, saving .css file...
-Wrote CSS to $HOME/projects/start-with-bulma/css/main.css
-```
-
-Use `npm run` to show all available commands:
-
-```sh
-Lifecycle scripts included in bulma-start:
-  start
-    npm-run-all --parallel css-watch js-watch
-
-available via `npm run-script`:
-  css-build
-    node-sass _sass/main.scss css/main.css
-  css-deploy
-    npm run css-build && npm run css-postcss
-  css-postcss
-    postcss --use autoprefixer --output css/main.css css/main.css
-  css-watch
-    npm run css-build -- --watch
-  deploy
-    npm run css-deploy && npm run js-build
-  js-build
-    babel _javascript --out-dir lib
-  js-watch
-    npm run js-build -- --watch
-```
-
-If you want to learn more, follow these links: [Bulma homepage](http://bulma.io) and [Documentation](http://bulma.io/documentation/overview/start/).
+![image](https://user-images.githubusercontent.com/48535259/81498918-0683a400-929e-11ea-98a4-e092910efa87.png)
 
 
-## Copyright and license
+![image](https://user-images.githubusercontent.com/48535259/81498934-1ac7a100-929e-11ea-86f3-34a939f11fe4.png)
 
-Code copyright 2017 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma-start/blob/master/LICENSE).
+
+![image](https://user-images.githubusercontent.com/48535259/81498943-274bf980-929e-11ea-8806-706739515a60.png)
+
+<br/>
+
+![image](https://user-images.githubusercontent.com/48535259/81498951-3337bb80-929e-11ea-9195-6fbe48bc196a.png)
+
+<br/>
+
+![image](https://user-images.githubusercontent.com/48535259/81498959-4185d780-929e-11ea-9796-5b616d40e873.png)
+
+<br/>
+
+![image](https://user-images.githubusercontent.com/48535259/81498963-4ba7d600-929e-11ea-8eac-262ab2d719b2.png)
+
+
+See the preview -> https://drive.google.com/file/d/1xoojJi5dUHujd-CcJ35Kjs2IQ-UULDCQ/edit
+
+  ## Mobile
+  
+   See the preview ->  https://drive.google.com/file/d/1ovy-Mlr1syzKSjrrjeMdfkwSbBfYsgfi/view
+
+
+
+
+## Support
+
+  Read the docs -> [Bulma](https://bulma.io).
+  
+## Stay in touch
+
+ - Github- - [Luminuszz](https://github.com/luminuszz)
+ - Linkedin - [Davi Ribeiro](https://www.linkedin.com/in/davi-ribeiro-luminuszz)
+ - Twitter - [@luminuszz1](https://twitter.com/luminuszz1)
+
+## License
+
+[License MIT]()
