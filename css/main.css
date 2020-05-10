@@ -97,7 +97,8 @@ a {
   border-radius: 4px; }
 
 .funcional {
-  background: url("../assets/novofundo.png") no-repeat padding-box; }
+//  background: url("../assets/novofundo.png") no-repeat padding-box; }
+
   .funcional .funcionalTitle {
     font-style: italic;
     display: flex;
