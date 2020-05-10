@@ -1,6 +1,6 @@
 <p align="center" style="background-color: black;" >
-  <a target="blank"><img src="https://user-images.githubusercontent.com/48535259/81500779-beb74980-92aa-11ea-968f-551572c1ff74.png
-" width="400" alt="" /></a>
+  <a target="blank"><img src="https://user-images.githubusercontent.com/48535259/81500779-beb74980-92aa-11ea-968f-551572c1ff74.png"
+ width="300" alt="" /></a>
 </p>
 
 
