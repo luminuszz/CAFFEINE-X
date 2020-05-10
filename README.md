@@ -40,13 +40,19 @@ $ yarn start
 
 
 
+![image](https://user-images.githubusercontent.com/48535259/81498918-0683a400-929e-11ea-98a4-e092910efa87.png)
+
+![image](https://user-images.githubusercontent.com/48535259/81498934-1ac7a100-929e-11ea-86f3-34a939f11fe4.png)
+
+![image](https://user-images.githubusercontent.com/48535259/81498943-274bf980-929e-11ea-8806-706739515a60.png)
+
+![image](https://user-images.githubusercontent.com/48535259/81498951-3337bb80-929e-11ea-9195-6fbe48bc196a.png)
+
+![image](https://user-images.githubusercontent.com/48535259/81498959-4185d780-929e-11ea-9796-5b616d40e873.png)
+
+![image](https://user-images.githubusercontent.com/48535259/81498963-4ba7d600-929e-11ea-8eac-262ab2d719b2.png)
 
 
-
-
-
-
-![image](https://user-images.githubusercontent.com/48535259/81498704-dbe51b80-929c-11ea-940e-e6b455043068.png)
 
 
 ## Support
