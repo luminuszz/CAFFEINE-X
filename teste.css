@@ -1,3 +1,9 @@
+#funcional{
+     font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .cardTeste{
       border-radius: 10px;
