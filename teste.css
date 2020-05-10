@@ -1,84 +1,92 @@
-.funcionalTitle{
-     font-style: italic;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.funcionalTitle {
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
-.cardTeste{
-      background: url("../assets/novofundo.png") no-repeat;
-      border-radius: 10px;
-      margin: 10px 0 0 10px;
-      transition: 0.3s;
-      box-shadow: 0px 3px 6px #00000029;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-left: 2%; 
+.cardTeste {
+  background: url("../assets/novofundo.png") no-repeat;
+  border-radius: 10px;
+  margin-right: 3%;
+  margin-left: 3%;
+  transition: 0.3s;
+  box-shadow: 4px 4px 4px 4px #00000029;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
 }
 
-.cardTeste h2{
-       font-weight: bold;
-        font-size: 29px;
-        text-align: center;
-        letter-spacing: 0px;
-        color: #060303;
-
+.cardTeste h2 {
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #060303;
 }
 
-.cardTeste p{
-        font-size: 22px;
-        text-align: center;
-        letter-spacing: 0px;
-        color: #060303;
+.cardTeste p {
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #060303;
 }
 
+.cardTeste:hover {
+  transform: translateY(-8%);
+}
 
+.planos {
+  margin-bottom: 2%;
+  display: flex;
+  transition: 0.4s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.planos p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: #15110e;
+}
+.planos button {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+  background: transparent
+    linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000021;
+  border-radius: 4px;
+}
+.planos button:hover {
+  color: #fff;
+}
 
-      .cardTeste:hover {
-        transform: translateY(-8%);
-      }
+.planos button:hover {
+  transform: translateY(-5%);
+}
 
+@media (max-width: 375px) {
+  .navbar-item {
+    margin-left: 5%;
+  }
 
-
-
- .planos {
-    margin-bottom: 2%;
-    display: flex;
-    transition: 0.4s;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        }
-    .planos p {
-      font-size: 18px;
-      text-align: center;
-      margin-top: 10px;
-      color: #15110e;
-    }
-   .planos button {
-      font-weight: 500;
-      font-size: 16px;
-      margin-top: 10px;
-      background: transparent
-        linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0%
-        no-repeat padding-box;
-      box-shadow: 0px 3px 3px #00000021;
-      border-radius: 4px;
-          }
-       .planos button:hover {
-        color: #fff;
-      }
-    }
- .planos button:hover {
-      transform: translateY(-5%);
-      
-      
-      @media(max-width: 375px){
-           cardTeste{
-            height: 10%;
-           
-           }    
-           
-      }
-  
+  .funcionalTitle {
+    margin-bottom: 5%;
+  }
+  .cardTeste h2 {
+    font-size: 25px;
+  }
+  .cardTeste p {
+    font-size: 16px;
+    width: 80%;
+  }
+  .planos p {
+    width: 70%;
+  }
+}
