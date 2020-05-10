@@ -1,5 +1,5 @@
 <p align="center">
-  <a target="blank"><img src="https://user-images.githubusercontent.com/48535259/81498606-46498c00-929c-11ea-80e1-8b486788010d.png" width="320" alt="" /></a>
+  <a target="blank"><img src="https://user-images.githubusercontent.com/48535259/81498606-46498c00-929c-11ea-80e1-8b486788010d.png" width="400" alt="" /></a>
 </p>
 
 
@@ -8,7 +8,8 @@
 ## Description
 
 
-   <p> The development of this SPA was used as a test to validate my skills in HTML, CSS and JS, using the CSS Bulma Framework
+   <p>
+  The development of this SPA was used as a test to validate my skills in HTML, CSS and JS, using the CSS Bulma Framework
 </p>
 
 
@@ -36,7 +37,8 @@ $ yarn start
 
 ```
 ## Preview
-![image](https://user-images.githubusercontent.com/48535259/81498661-99234380-929c-11ea-848a-a4bc4b8f1b56.png)
+![image](https://user-images.githubusercontent.com/48535259/81498770-2e263c80-929d-11ea-885e-a88836264499.png)
+
 
 <br/>
 
