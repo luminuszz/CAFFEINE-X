@@ -15,7 +15,7 @@
 
 ## Features
 
-  - This project use  [Bulma package](https://bulma.io), [Sass](https://sass-lang.com)
+  - This project use  [Bulma package](https://bulma.io) and [Sass](https://sass-lang.com)
   - Bulma version :  0.8.2
   - Sass version: 1.26.5 
   
