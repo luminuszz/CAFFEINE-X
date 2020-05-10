@@ -42,10 +42,10 @@ $ yarn start
 
 ![image](https://user-images.githubusercontent.com/48535259/81498918-0683a400-929e-11ea-98a4-e092910efa87.png)
 
-<br/>
+
 ![image](https://user-images.githubusercontent.com/48535259/81498934-1ac7a100-929e-11ea-86f3-34a939f11fe4.png)
 
-<br/>
+
 ![image](https://user-images.githubusercontent.com/48535259/81498943-274bf980-929e-11ea-8806-706739515a60.png)
 
 <br/>
