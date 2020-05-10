@@ -34,8 +34,41 @@
 
 
 
-
-
       .cardTeste:hover {
         transform: translateY(-8%);
       }
+
+
+
+
+ .planos {
+    margin-bottom: 2%;
+    display: flex;
+    transition: 0.4s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+    .planos p {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 10px;
+      color: #15110e;
+    }
+   .planos button {
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 10px;
+      background: transparent
+        linear-gradient(270deg, #e4ca7f 0%, #dbc27a 88%, #d5bc77 100%) 0% 0%
+        no-repeat padding-box;
+      box-shadow: 0px 3px 3px #00000021;
+      border-radius: 4px;
+          }
+       .planos button:hover {
+        color: #fff;
+      }
+    }
+ .planos button:hover {
+      transform: translateY(-5%);
+  
