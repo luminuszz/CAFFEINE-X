@@ -41,15 +41,15 @@ $ yarn start
 
 
 
-<br/>
+
 
 ![image](https://user-images.githubusercontent.com/48535259/81498689-b48e4e80-929c-11ea-8dd9-e7d1139a4e7b.png)
 
-<br/>
 
-![image](https://user-images.githubusercontent.com/48535259/81498693-c1ab3d80-929c-11ea-8bd4-cde33ca6cc45.png)
 
-<br/>
+![image](https://user-images.githubusercontent.com/48535259/81498841-89582f00-929d-11ea-8eca-dad1aa5a4cc3.png)
+
+
 
 ![image](https://user-images.githubusercontent.com/48535259/81498704-dbe51b80-929c-11ea-940e-e6b455043068.png)
 
