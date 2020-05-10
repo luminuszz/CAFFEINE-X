@@ -103,11 +103,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center; }
-  .funcional .columns {
+  .funcional .card {
     margin-top: 3%;
     justify-content: center;
     align-items: center; }
-    .funcional .columns div {
+   .funcional .card div {
       width: 30%;
       border-radius: 10px;
       margin: 10px 0 0 10px;
@@ -118,18 +118,18 @@ a {
       flex-direction: column;
       justify-content: center;
       padding-left: 2%; }
-      .funcional .columns div h2 {
+      .funcional .card div h2 {
         font-weight: bold;
         font-size: 29px;
         text-align: center;
         letter-spacing: 0px;
         color: #060303; }
-      .funcional .columns div p {
+      .funcional .card div p {
         font-size: 22px;
         text-align: center;
         letter-spacing: 0px;
         color: #060303; }
-      .funcional .columns div:hover {
+      .funcional .card div:hover {
         transform: translateY(-8%); }
   .funcional .planos {
     margin-bottom: 2%;
