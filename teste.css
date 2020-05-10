@@ -71,4 +71,10 @@
     }
  .planos button:hover {
       transform: translateY(-5%);
+      
+      
+      @media(max-width: 375px){
+             height: 30%;
+           
+      }
   
