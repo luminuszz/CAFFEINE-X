@@ -36,12 +36,17 @@ $ yarn start
 
 ```
 ## Preview
-
 ![image](https://user-images.githubusercontent.com/48535259/81498661-99234380-929c-11ea-848a-a4bc4b8f1b56.png)
+
+<br/>
 
 ![image](https://user-images.githubusercontent.com/48535259/81498689-b48e4e80-929c-11ea-8dd9-e7d1139a4e7b.png)
 
+<br/>
+
 ![image](https://user-images.githubusercontent.com/48535259/81498693-c1ab3d80-929c-11ea-8bd4-cde33ca6cc45.png)
+
+<br/>
 
 ![image](https://user-images.githubusercontent.com/48535259/81498704-dbe51b80-929c-11ea-940e-e6b455043068.png)
 
