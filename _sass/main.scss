@@ -4,7 +4,7 @@
   font-family: "NexaDemo-Bold";
   src: url("../fonts/Nexa/Nexa/Nexa_V2_2020/WEB/NexaDemo-Bold.eot");
 }
-
+// zerando css padrão do html
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +33,8 @@ a {
   text-decoration: none;
   color: #fff;
 }
+//
+
 .navbar-item {
   margin-left: 50px;
   text-decoration: none;
@@ -115,7 +117,7 @@ a {
   border-radius: 4px;
 }
 .funcional {
- // background: url("../assets/novofundo.png") no-repeat padding-box;
+  // background: url("../assets/novofundo.png") no-repeat padding-box;
   .funcionalTitle {
     font-style: italic;
     display: flex;
