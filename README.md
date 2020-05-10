@@ -37,7 +37,8 @@ $ yarn start
 
 ```
 ## Preview
-![image](https://user-images.githubusercontent.com/48535259/81498770-2e263c80-929d-11ea-885e-a88836264499.png)
+![image](https://user-images.githubusercontent.com/48535259/81498812-5a41bd80-929d-11ea-9e21-32d7e40f94e7.png)
+
 
 
 <br/>
