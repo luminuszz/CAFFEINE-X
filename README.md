@@ -9,7 +9,7 @@
 
 
    <p>
-  The development of this SPA was used as a test to validate my skills in HTML, CSS and JS, using the CSS Bulma Framework
+  The development of this Responsive SPA was used as a test to validate my skills in HTML, CSS and JS, using the CSS Bulma Framework
 </p>
 
 
@@ -61,7 +61,11 @@ $ yarn start
 ![image](https://user-images.githubusercontent.com/48535259/81498963-4ba7d600-929e-11ea-8eac-262ab2d719b2.png)
 
 
-<iframe src="https://drive.google.com/file/d/1xoojJi5dUHujd-CcJ35Kjs2IQ-UULDCQ/preview" width="640" height="480"></iframe>
+See the preview -> https://drive.google.com/file/d/1xoojJi5dUHujd-CcJ35Kjs2IQ-UULDCQ/edit
+
+  ## Mobile
+  
+   See the preview ->  https://drive.google.com/file/d/1ovy-Mlr1syzKSjrrjeMdfkwSbBfYsgfi/view
 
 
 
@@ -69,6 +73,7 @@ $ yarn start
 ## Support
 
   Read the docs -> [Bulma](https://bulma.io).
+  
 ## Stay in touch
 
  - Github- - [Luminuszz](https://github.com/luminuszz)
