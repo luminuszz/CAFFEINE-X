@@ -15,9 +15,10 @@
 
 ## Features
 
-  - This project use  [Bulma package](https://bulma.io) and [Sass](https://sass-lang.com)
+  - This project use  [Bulma package](https://bulma.io) , [Sass](https://sass-lang.com) and [Jquery](https://code.jquery.com/jquery/)
   - Bulma version :  0.8.2
   - Sass version: 1.26.5 
+  - Jquery version: 3.5.1
   
 
 
