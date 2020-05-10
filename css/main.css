@@ -430,10 +430,6 @@ a {
   .img3 .container h1 {
     font-size: 30px; } }
 
-@media (min-width: 1024px) {
-  .img {
-    background-size: 100%; } }
-
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
